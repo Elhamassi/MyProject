@@ -11,7 +11,7 @@ def home():
 
 @app.route('/api',methods=['POST'])
 def predict_fun():
-    NB_spam_model = open('./uploaded/model_NB.pkl','rb') 
+    NB_spam_model = open('./uploaded/modelNB.pkl','rb') 
     clf = pickle.load(NB_spam_model)
 	
     cv_model = open('./uploaded/cv.pkl', 'rb')
@@ -22,7 +22,7 @@ def predict_fun():
         vect    = cv.transform([data['message']]).toarray()
         my_prediction = clf.predict(vect) 
 
-    return "my_prediction: "+str(my_prediction[0])
+    return str(my_prediction[0])
 
 #Calling the main function and running the flask app 
 if __name__ == '__main__':

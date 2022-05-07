@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule  } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './elements/menu/menu.component';
 import { HeaderComponent } from './elements/header/header.component';
@@ -22,7 +24,9 @@ import { StartComponent } from './start/start.component';
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

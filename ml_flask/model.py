@@ -23,6 +23,6 @@ clf.fit(X_train,y_train)
 print(clf.score(X_test,y_test)) 
 
 #Alternative Usage of Saved Model 
-pickle.dump(clf, open('./uploaded/model_NB.pkl','wb')) 
+pickle.dump(clf, open('./uploaded/modelNB.pkl','wb')) 
 pickle.dump(cv, open('./uploaded/cv.pkl','wb'))
 
