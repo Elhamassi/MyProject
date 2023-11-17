@@ -121,5 +121,8 @@
         }
       }
     }},
-  "defaultProject": "spammerapp"
+  "defaultProject": "spammerapp",
+  "cli": {
+    "analytics": false
+  }
 }
